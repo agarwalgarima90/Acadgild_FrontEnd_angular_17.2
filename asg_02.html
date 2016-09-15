@@ -23,6 +23,11 @@
                                                 alert("no entry found for the key");
                                         }
                                 };
+
+
+                                $scope.getInfo = function() {
+                                        alert("Cache Info: " + $scope.cache.info);
+                                }
                                 
                         }]);
                 </script>
@@ -40,6 +45,7 @@
 
                                         <p style="font-family:Arial;color:yellow;background-color:steelblue;padding;3px">Item: {{currentItem}}</p>
                                 </p>
+                                <p> <button ng-click="getInfo()">Info</button>
                         </div>
                 </fieldset>
         </body>
